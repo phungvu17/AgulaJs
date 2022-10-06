@@ -1,0 +1,62 @@
+
+<h1>thanh pho: {{city}}</h1>
+<h2>Nhiet do : {{temp}}</h2>
+<h3>do am: {{hump}}</h3>
+<h4>ap suat: {{press}}</h4>
+<div class="main">
+  <h1>Thời tiết hiện tại</h1>
+  <h4>Thành phố: {{city}}</h4>
+  <p>Nhiệt độ: {{temp}}<sup>o</sup>C</p>
+  <p>Độ ẩm: {{hump}}%</p>
+  <p>Áp suất: {{press}}</p>
+</div>
+
+<div class="nut">
+  <button type="button" (click)="hanoi()">Hà Nội</button>
+  <button type="button" (click)="hcm()">TP HCM</button>
+  <button type="button" (click)="london()">London</button>
+  <button type="button" (click)="newyork()">New York</button>
+  <button type="button" (click)="tokyo()">Tokyo</button>
+  <button type="button" (click)="berlin()">Berlin</button>
+</div>
+
+<style>
+
+  .main{
+    width: 355px;
+    height: 410px;
+    background: rgb(2,0,36);
+    background: linear-gradient(8deg, rgba(2,0,36,1) 0%, rgba(173,246,235,1) 0%, rgba(0,212,255,1) 100%);
+    font-family: 'utm alexander';
+    font-weight: 100;
+    margin: 50px 0;
+  }
+  h1{
+    text-align: center;
+    margin: 25px 20px;
+  }
+  h4{
+    text-align: center;
+    margin: 5px 20px;
+  }
+  p{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .nut{
+    top: 400px;
+    text-align: center;
+    position: absolute;
+    line-height: 50px;
+  }
+  button{
+    margin: 0 5px;
+    line-height: 20px;
+    transition: all 0.3ms;
+  }
+  button:hover{
+    background-color: #E6E6FA;
+
+  }
+</style>
