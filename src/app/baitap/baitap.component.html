@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>dự báo</h1>
+<div class="conternor">
+  <div class="row" id="ls"  >
+    <div class="col-3" *ngFor="let m of dubao ; let i =index;">
+      <div  class="card  mb-2 mt-1  " style="width: 18rem;">
+        <div class="card-body" >
+          <p class="card-text">{{dubao[i].dt_txt}}</p>
+          <img  src="http://openweathermap.org/img/wn/{{dubao[i].weather[0].icon}}@2x.png" alt="anhloi"  style=" margin:  auto 50px ; float: right"/>
+          <h5   class="card-title">{{dubao[i].main.temp}}</h5>
+          <p class="dubao">{{dubao[i].weather[0].description}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
